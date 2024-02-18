@@ -1,0 +1,24 @@
+# 端口
+server:
+  port: 8083
+spring:
+  config:
+    import:
+      - classpath:config/dataSource.yaml # 设置数据库源
+      - classpath:config/mybatis.yaml # 设置mybatis设置
+      - classpath:config/springdoc.yaml #springDoc设置
+      - classpath:config/redis.yaml # redis设置
+      - classpath:config/aliyun.yaml # 阿里云设置
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    default-property-inclusion: non_null #这样的配置会全局地告诉 Jackson 在序列化时排除值为 null 的字段。
+logging:
+  level:
+    cn.kiroe.index.market.frontdesk: debug
+#    更详细的log
+#    root: debug
+
+
+
+

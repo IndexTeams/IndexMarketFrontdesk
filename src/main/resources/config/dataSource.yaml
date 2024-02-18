@@ -1,0 +1,7 @@
+spring:
+  # datasource设置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.5.62:3306/index_market
+    username: root
+    password: 123321
